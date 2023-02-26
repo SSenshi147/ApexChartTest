@@ -1,0 +1,38 @@
+﻿@page "/counter"
+@using System.Text.Json;
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+@if (!loaded)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <ApexChart TItem="ChartModel">
+        <ApexPointSeries TItem="ChartModel"
+                     Items="this.models"
+                     XValue="(x => x.X)"
+                     YValue="(x => x.Y)">
+        </ApexPointSeries>
+    </ApexChart>
+}
+
+@code {
+    private List<ChartModel> models;
+    private bool loaded = false;
+    private const string path = "C:\\Users\\MARCI\\desktop\\teszt.json";
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        using HttpClient httpClient = new HttpClient();
+        models = await httpClient.GetFromJsonAsync<List<ChartModel>>("https://localhost:7053/api/values");
+        //var asd = httpClient.GetFromJsonAsync<List<ChartModel>>("https://localhost:7053/api/values");
+        //asd.ContinueWith(x => models = x.Result);
+        //asd.Start();
+        loaded = true;
+    }
+}

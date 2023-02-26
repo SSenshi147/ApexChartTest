@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexChartTest", "ApexChartTest\ApexChartTest.csproj", "{9C7ED234-CE79-4B2B-8053-7F6BB7B5C547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{FA4321F0-C653-481D-A1D7-2CB62CFD247E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C7ED234-CE79-4B2B-8053-7F6BB7B5C547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7ED234-CE79-4B2B-8053-7F6BB7B5C547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7ED234-CE79-4B2B-8053-7F6BB7B5C547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7ED234-CE79-4B2B-8053-7F6BB7B5C547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4321F0-C653-481D-A1D7-2CB62CFD247E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4321F0-C653-481D-A1D7-2CB62CFD247E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4321F0-C653-481D-A1D7-2CB62CFD247E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4321F0-C653-481D-A1D7-2CB62CFD247E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6066B92A-FC8E-4845-947D-B59ECA556A20}
+	EndGlobalSection
+EndGlobal
